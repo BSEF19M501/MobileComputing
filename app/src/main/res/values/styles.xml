@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <style name="apptheme">SimpleCalculator</style>
-        <item name="red"> @color/red</item>
-        <item name="colorPrimaryDark"> @color/black</item>
-        <item name="colorAccent"> @color/red</item>
+        <item name="colorPrimaryDark" type="color"> @color/black</item>
+        <item name="colorAccent" type="color"> @color/red</item>
 </resources>
