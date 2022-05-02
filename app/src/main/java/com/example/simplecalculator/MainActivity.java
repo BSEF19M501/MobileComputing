@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void clearOnClick(View view)
     {
-        workingsTV.setText("");
-        resultsTV.setText("");
+        workingsTV.setText("Enter Expression");
+        resultsTV.setText("Answer");
         workings = "";
     }
 
@@ -153,7 +153,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void backspaceOnClick(View view)
     {
-        workings = workings.substring(0, workings.length()-1);
+        if(workings.length() > 0)
+        {
+            workings = workings.substring(0, workings.length() - 1);
+        }
+        else
+        {
+            workings = "Enter Expression";
+        }
         workingsTV.setText(workings);
     }
 }
