@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     TextView resultsTV;
 
     String workings = "";
+    boolean b = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,9 +62,20 @@ public class MainActivity extends AppCompatActivity {
         workings = "";
     }
 
+    //there should be separate buttons for nested parenthesesy
     public void bracketsOnClick(View view)
     {
-        setWorkings("");
+        if (b == false)
+        {
+            setWorkings("(");
+            b = true;
+        }
+        else
+        {
+            setWorkings(")");
+            b = false;
+        }
+
     }
 
     public void percentageOnClick(View view)
